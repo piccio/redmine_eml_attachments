@@ -1,0 +1,6 @@
+<p>
+  <%= label 'settings[enable_log]', l(:enable_log, scope: :eml_attachments) %>
+  <%= hidden_field_tag('settings[enable_log]', false) %>
+  <%= check_box_tag('settings[enable_log]', true, @settings['enable_log'] == 'true') %>
+  <%= content_tag :em, l(:enable_log_info, scope: :eml_attachments), class: 'info' %>
+</p>
